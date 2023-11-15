@@ -1,0 +1,88 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "My First API",
+        "version": "0.1"
+    },
+    "paths": {
+        "/register": {
+            "get": {
+                "tags": [
+                    "register"
+                ],
+                "summary": "Returns a Sample API response",
+                "description": "A sample greeting to test out the API",
+                "operationId": "register",
+                "parameters": [
+                    {
+                        "name": "usernamr",
+                        "in": "query",
+                        "description": "nama depan",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "password",
+                        "in": "query",
+                        "description": "nama belakang",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "email",
+                        "in": "query",
+                        "description": "nama belakang",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/program": {
+            "put": {
+                "tags": [
+                    "program"
+                ],
+                "summary": "Returns a Sample API response",
+                "description": "A sample greeting to test out the API",
+                "operationId": "login",
+                "parameters": [
+                    {
+                        "name": "firstname",
+                        "in": "query",
+                        "description": "nama depan",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "lastname",
+                        "in": "query",
+                        "description": "nama belakang",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        }
+    }
+}
